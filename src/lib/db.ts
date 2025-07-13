@@ -1,5 +1,5 @@
 import { PrismaClient } from '../generated/prisma';
-
+export { prisma };
 
 const globalForPrisma = globalThis as unknown as {
   prisma: PrismaClient | undefined;
