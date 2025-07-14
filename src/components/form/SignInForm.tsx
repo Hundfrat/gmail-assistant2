@@ -52,7 +52,7 @@ const SignInForm = () => {
       });
     } else {
       router.refresh();
-      router.push('/');}
+     router.push('https://gmail-assistant.com');}
   };
 
   return (
