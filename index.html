@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assistant</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="background">
+        <div class="container">
+            <header>
+                <div class="header-wrapper">
+                    <a href="#" class="header-logo">
+                        <img src="images/gmain.png" alt="Gmail icon" class="header-logo__img">
+                        <span class="translate-transition" data-en="Gmail Assistant" data-ru="Gmail Ассистент">Gmail
+                            Assistant</span>
+                    </a>
+                    <div class="hamburger" onclick="toggleMenu()">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                    <ul class="header-list__lists">
+                        <div class="custom-select">
+                            <div class="select-header" onclick="toggleSelect()">
+                                <svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2m6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56M12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96M4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56m2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8M12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96M14.34 14H9.66c-.09-.66-.16-1.32-.16-2s.07-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2m.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56M16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2z">
+                                    </path>
+                                </svg>
+                                <span class="selected-option">English</span>
+                            </div>
+                            <div class="select-options">
+                                <div class="option selected" data-value="en" onclick="selectOption(this)">
+                                      <input class="select-radio" type="radio">
+                                    <span data-en="English" data-ru="English">English</span>
+                                </div>
+                                <div class="option" data-value="ru" onclick="selectOption(this)">
+                                    <input class="select-radio" type="radio">
+                                    <span data-en="Русский" data-ru="Русский">Русский</span>
+                                </div>
+                            </div>
+                        </div>
+                        <li><a href="#work" class="header-list__list translate-transition" data-en="How it works"
+                                data-ru="Как это работает">How it works</a></li>
+                        <li><a href="#feat" class="header-list__list translate-transition" data-en="Features"
+                                data-ru="Ключевые особенности">Features</a></li>
+                        <li><a href="#price" class="header-list__list translate-transition" data-en="Pricing"
+                                data-ru="Цены">Pricing</a></li>
+                       <li>
+  <a href="https://gmail-assistant-gq45.onrender.com/api/auth/signin/google?callbackUrl=https://gmail-assistant-gq45.onrender.com" 
+     class="header-list__list translate-transition" 
+     data-en="Sign in with Google" data-ru="Войти через Google" 
+     target="_blank" rel="noopener noreferrer">
+    Sign in with Google
+  </a>
+</li>
+
+                        <li><a href="#" class="header-btn"><img src="images/google.png" alt="Google icon"
+                                    class="header-btn__img"><span class="translate-transition"
+                                    data-en="Add to Chrome — It's free" data-ru="Установить в Chrome — бесплатно">Add to
+                                    Chrome — It's free</span></a></li>
+                    </ul>
+                </div>
+            </header>
+            <main>
+                <section>
+                    <h1 class="main-title translate-transition"
+                        data-en="Increase Productivity. <br> Write faster. Write better."
+                        data-ru="Достигайте лучших результатов с меньшими усилиями. <br> Пишите быстрее. Пишите лучше.">
+                        Increase Productivity. <br> Write faster. Write better.</h1>
+                    <p class="main-text translate-transition"
+                        data-en="Make your Gmail experience more efficient and enjoyable"
+                        data-ru="Сделайте работу с Gmail более эффективной и приятной">Make your Gmail experience more
+                        efficient and enjoyable</p>
+                    <a href="" class="main-btn"><img src="images/google.png" alt="" class="header-btn__img"><span
+                            class="translate-transition" data-en="Add to Chrome — It's free"
+                            data-ru="Установить в Chrome — бесплатно">Add to Chrome — It's free</span></a>
+                </section>
+                <section id="work">
+                    <h3 class="work-title translate-transition" data-en="How it works" data-ru="Как это работает">How it
+                        works</h3>
+                    <ul class="work-block__wrap">
+                        <li class="work-block">
+                            <h5 class="work-block__title translate-transition" data-en="STEP 1" data-ru="ШАГ 1">STEP 1
+                            </h5>
+                            <h5 class="work-block__title translate-transition" data-en="Add to browser"
+                                data-ru="Добавьте в браузер">Add to browser</h5>
+                            <p class="work-block__text translate-transition"
+                                data-en="Add Gmail Assistant extension to your browser to improve your email writing process."
+                                data-ru="Добавьте расширение Gmail Assistant в ваш браузер, чтобы улучшить процесс написания писем.">
+                                Add Gmail Assistant extension to your browser to improve your email writing process.</p>
+                        </li>
+                        <li class="work-block">
+                            <h5 class="work-block__title translate-transition" data-en="STEP 2" data-ru="ШАГ 2">STEP 2
+                            </h5>
+                            <h5 class="work-block__title translate-transition" data-en="Sign in"
+                                data-ru="Авторизуйтесь">Sign in</h5>
+                            <p class="work-block__text translate-transition"
+                                data-en="Easily sign in with Google or email. It's simple, free and secure."
+                                data-ru="Авторизуйтесь через Google или по электронной почте. Это просто, бесплатно и безопасно.">
+                                Easily sign in with Google or email. It's simple, free and secure.</p>
+                        </li>
+                        <li class="work-block">
+                            <h5 class="work-block__title translate-transition" data-en="STEP 3" data-ru="ШАГ 3">STEP 3
+                            </h5>
+                            <h5 class="work-block__title translate-transition" data-en="Be more productive"
+                                data-ru="Будьте продуктивнее">Be more productive</h5>
+                            <p class="work-block__text translate-transition"
+                                data-en="Spend less time on email composition and more time on other important tasks."
+                                data-ru="Тратьте меньше времени на составление писем и больше — на другие важные дела.">
+                                Spend less time on email composition and more time on other important tasks.</p>
+                        </li>
+                    </ul>
+                    <div class="work-text__wrap">
+                        <p class="work-text translate-transition"
+                            data-en="Enhance Communication: Improve the clarity and effectiveness of your emails with well-structured phrases that resonate with your audience."
+                            data-ru="Улучшайте качество общения: Используйте лаконичные и эффективные выражения, чтобы ваши письма лучше воспринимались и создавали нужное впечатление.">
+                            Enhance Communication: Improve the clarity and effectiveness of your emails with
+                            well-structured phrases that resonate with your audience.</p>
+                        <p class="work-text translate-transition"
+                            data-en="Simple and Practical: Our extension focuses on providing useful suggestions without the complexities of Al, ensuring a straightforward user experience."
+                            data-ru="Просто и практично: Мы предлагаем полезные подсказки без запутанных технологий ИИ, обеспечивая интуитивно понятный и легкий в использовании интерфейс.">
+                            Simple and Practical: Our extension focuses on providing useful suggestions without the
+                            complexities of Al, ensuring a straightforward user experience.</p>
+                        <p class="work-text translate-transition"
+                            data-en="User-friendly Interface: The extension integrates seamlessly with Gmail, making it easy to use without disrupting your workflow."
+                            data-ru="Удобный интерфейс: Расширение легко интегрируется с Gmail, не нарушая ваш рабочий процесс.">
+                            User-friendly Interface: The extension integrates seamlessly with Gmail, making it easy to
+                            use without disrupting your workflow.</p>
+                            <div ></div>
+                    </div>
+                </section>
+                <section id="feat">
+                    <h3 class="feat-title translate-transition" data-en="Key Features" data-ru="Ключевые особенности">
+                        Key Features</h3>
+                    <div class="feat-wrap">
+                        <div class="feat-block">
+                            <h6 class="feat-block__title translate-transition" data-en="Predictive Text Suggestions"
+                                data-ru="Подсказки для быстрого ввода текста">Predictive Text Suggestions</h6>
+                            <p class="feat-block__text translate-transition"
+                                data-en="Our extension provides a list of commonly used phrases and expressions, allowing you to easily insert them into your emails. This helps reduce the time spent thinking about wording and lets you focus on your message."
+                                data-ru="Расширение предлагает список часто используемых фраз и выражений, позволяя легко вставлять их в ваши письма. Это помогает сократить время на подбор формулировок и сосредоточиться на содержании сообщения.">
+                                Our extension provides a list of commonly used phrases and expressions, allowing you to
+                                easily insert them into your emails. This helps reduce the time spent thinking about
+                                wording and lets you focus on your message.</p>
+                        </div>
+                        <div class="feat-block">
+                            <h6 class="feat-block__title translate-transition" data-en="Personalized Phrase Library"
+                                data-ru="Персональный список фраз">Personalized Phrase Library</h6>
+                            <p class="feat-block__text translate-transition"
+                                data-en="You can create a personal library of your frequently used phrases. This feature ensures that your unique writing style is always accessible, making your communication more consistent"
+                                data-ru="Вы можете создавать собственный список часто используемых выражений. Эта функция обеспечивает постоянный доступ к вашему уникальному стилю письма, способствуя единству стиля текста.">
+                                You can create a personal library of your frequently used phrases. This feature ensures
+                                that your unique writing style is always accessible, making your communication more
+                                consistent</p>
+                        </div>
+                        <div class="feat-block">
+                            <h6 class="feat-block__title translate-transition" data-en="Time-Saving Efficiency"
+                                data-ru="Экономия времени">Time-Saving Efficiency</h6>
+                            <p class="feat-block__text translate-transition"
+                                data-en="By offering relevant suggestions, our extension minimizes repetitive typing, helping you save time whether you are responding to colleagues, clients, or friends."
+                                data-ru="Благодаря актуальным подсказкам расширение минимизирует повторяющийся набор текста, экономя ваше время при переписке с коллегами, клиентами и друзьями.">
+                                By offering relevant suggestions, our extension minimizes repetitive typing, helping you
+                                save time whether you are responding to colleagues, clients, or friends.</p>
+                        </div>
+                        <div class="feat-block">
+                            <h6 class="feat-block__title translate-transition" data-en="No Al, Just Smart Suggestions"
+                                data-ru="Без искусственного интеллекта">No Al, Just Smart Suggestions</h6>
+                            <p class="feat-block__text translate-transition"
+                                data-en="Unlike other tools, our extension focuses on providing practical, commonly used expressions without the complexities of Al. Al may not fully capture a user's unique tone or preferred phrasing, leading to suggestions that feel generic or out of context."
+                                data-ru="В отличие от других расширений, наше расширение сосредоточено на предоставлении практичных, часто используемых выражений без сложностей ИИ. ИИ-подсказки иногда содержат стилистические ошибки, которые могут ухудшить восприятие текста, поэтому наше расширение — более надёжный выбор для создания профессиональных, структурированных писем.">
+                                Unlike other tools, our extension focuses on providing practical, commonly used
+                                expressions without the complexities of Al. Al may not fully capture a user's unique
+                                tone or preferred phrasing, leading to suggestions that feel generic or out of context.
+                            </p>
+                        </div>
+                        <div class="feat-block">
+                            <h6 class="feat-block__title translate-transition" data-en="Perfect your writing"
+                                data-ru="Дружественный интерфейс">Perfect your writing</h6>
+                            <p class="feat-block__text translate-transition"
+                                data-en="Elevate your writing to a standard of excellence and persuasive clarity in just moments, avoiding the need for lengthy revisions."
+                                data-ru="Расширение легко интегрируется с Gmail, обеспечивая удобство использования без необходимости отвлекаться на дополнительные действия.">
+                                Elevate your writing to a standard of excellence and persuasive clarity in just moments,
+                                avoiding the need for lengthy revisions.</p>
+                        </div>
+                        <div class="feat-block--last">
+                            <h6 class="feat-block--last__title translate-transition"
+                                data-en="Get more done in less time" data-ru="Успевайте больше за меньшее время">Get
+                                more done in less time</h6>
+                            <a href="" class="feat-block--last__btn"><img src="images/google.png" alt=""
+                                    class="header-btn__img"><span class="translate-transition"
+                                    data-en="Add to Chrome — It's free" data-ru="Установить в Chrome — бесплатно">Add to
+                                    Chrome — It's free</span></a>
+                        </div>
+                    </div>
+                </section>
+                <section id="price">
+                    <h3 class="price-title translate-transition" data-en="PRICING" data-ru="ЦЕНЫ">PRICING</h3>
+                    <div class="price-wrap">
+                        <div class="price-block">
+                            <div class="price-block__wrap">
+                                <h5 class="price-block__title translate-transition"
+                                    data-en="Free <br> $0 <span>USD</span>"
+                                    data-ru="Бесплатно <br> $0 <span>USD</span>">Free <br> $0 <span>USD</span></h5>
+                                <p class="price-block__text translate-transition" data-en="20 queries a day"
+                                    data-ru="20 запросов в день">20 queries a day</p>
+                            </div>
+                            <a href="" class="price-block__btn2 translate-transition" data-en="Create account"
+                                data-ru="Создать аккаунт">Create account</a>
+                        </div>
+                        <div class="price-block">
+                            <div class="price-block__wrap">
+                                <h5 class="price-block__title translate-transition"
+                                    data-en="Monthly <br> $2 <span>USD</span>"
+                                    data-ru="В месяц <br> $2 <span>USD</span>">Monthly <br> $2 <span>USD</span></h5>
+                                <p class="price-block__text translate-transition" data-en="Unlimited"
+                                    data-ru="Неограниченно">Unlimited</p>
+                            </div>
+                            <a href="" class="price-block__btn translate-transition" data-en="Get started"
+                                data-ru="Начать">Get started</a>
+                        </div>
+                        <div class="price-block">
+                            <div class="price-block__wrap">
+                                <h5 class="price-block__title translate-transition"
+                                    data-en="Yearly <br> $16 <span>USD</span>"
+                                    data-ru="В год <br> $16 <span>USD</span>">Yearly <br> $16 <span>USD</span></h5>
+                                <p class="price-block__text translate-transition"
+                                    data-en="Unlimited <br> <br> <br> 33% off"
+                                    data-ru="Неограниченно <br> <br> <br> Скидка 33%">Unlimited <br> <br> <br> 33% off
+                                </p>
+                            </div>
+                            <a href="" class="price-block__btn translate-transition" data-en="Get started"
+                                data-ru="Начать">Get started</a>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer>
+                <ul class="footer-btns">
+                    <li><a href="TermsOfService.html" class="footer-btn translate-transition" data-en="Terms of service"
+                            data-ru="Условия использования">Terms of service</a></li>
+                    <li><a href="PrivacyPolicy.html" class="footer-btn translate-transition" data-en="Privacy policy"
+                            data-ru="Политика конфиденциальности">Privacy policy</a></li>
+                    <li><a href="#contact" class="footer-btn translate-transition" data-en="Contact us"
+                            data-ru="Связаться с нами">Contact us</a></li>
+                </ul>
+                <div class="modal">
+                    <div class="modal-content">
+                        <span class="close-modal">&times;</span>
+                        <h2 class="modal-title translate-transition" data-en="Contact Us" data-ru="Связаться с нами">
+                            Contact Us</h2>
+                        <form>
+                            <input type="text" placeholder="Your Name" class="translate-transition"
+                                data-en-placeholder="Your Name" data-ru-placeholder="Ваше имя">
+                            <input type="email" placeholder="Your Email" class="translate-transition"
+                                data-en-placeholder="Your Email" data-ru-placeholder="Ваш Email">
+                            <textarea placeholder="Your Message" class="translate-transition"
+                                data-en-placeholder="Your Message" data-ru-placeholder="Ваше сообщение"></textarea>
+                            <button type="submit" class="translate-transition" data-en="Send"
+                                data-ru="Отправить">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
