@@ -1,5 +1,11 @@
-import { redirect } from 'next/navigation';
+'use client';
 
-export default async function Home() {
-  redirect('https://gmail-assistant.com');
+import { useEffect } from 'react';
+
+export default function Home() {
+  useEffect(() => {
+    window.location.href = 'https://gmail-assistant.com';
+  }, []);
+
+  return null;
 }
