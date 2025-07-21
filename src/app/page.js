@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Image from 'next/image'
 import { useState } from 'react'
 
 export default function Home() {
@@ -26,7 +27,7 @@ export default function Home() {
         <title>Assistant</title>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" href="/style.css" />
+        {/* Removed manual stylesheet link as styles should be imported globally */}
         {/* Скрипты лучше перенести в React, поэтому script.js не подключаем */}
       </Head>
 
@@ -35,7 +36,7 @@ export default function Home() {
           <header>
             <div className="header-wrapper">
               <a href="#" className="header-logo">
-                <img src="/images/gmain.png" alt="Gmail icon" className="header-logo__img" />
+                <Image src="/images/gmain.png" alt="Gmail icon" className="header-logo__img" width={32} height={32} />
                 <span
                   className="translate-transition"
                   data-en="Gmail Assistant"
@@ -151,13 +152,13 @@ export default function Home() {
                 </li>
                 <li>
                   <a href="#" className="header-btn">
-                    <img src="/images/google.png" alt="Google icon" className="header-btn__img" />
+                    <Image src="/images/google.png" alt="Google icon" className="header-btn__img" width={32} height={32} />
                     <span
                       className="translate-transition"
-                      data-en="Add to Chrome — It's free"
+                      data-en="Add to Chrome — It&apos;s free"
                       data-ru="Установить в Chrome — бесплатно"
                     >
-                      Add to Chrome — It's free
+                      Add to Chrome — It&apos;s free
                     </span>
                   </a>
                 </li>
@@ -183,13 +184,13 @@ export default function Home() {
                 Make your Gmail experience more efficient and enjoyable
               </p>
               <a href="" className="main-btn">
-                <img src="/images/google.png" alt="" className="header-btn__img" />
+                <Image src="/images/google.png" alt="" className="header-btn__img" width={32} height={32} />
                 <span
                   className="translate-transition"
-                  data-en="Add to Chrome — It's free"
+                  data-en="Add to Chrome — It&apos;s free"
                   data-ru="Установить в Chrome — бесплатно"
                 >
-                  Add to Chrome — It's free
+                  Add to Chrome — It&apos;s free
                 </span>
               </a>
             </section>

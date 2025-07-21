@@ -3,6 +3,7 @@ import Provider from '../components/Provider'; // Corrected import statement
 import Toaster from '@/components/ui/toaster'; // Corrected import statement
 import '../styles/globals.css'; // Corrected import statement
 import type { Metadata } from 'next';
+import '../styles/style.css';
 import { Inter } from 'next/font/google';
 
 const inter = Inter({ subsets: ['latin'] });
