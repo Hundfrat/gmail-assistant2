@@ -7,7 +7,7 @@
     "build": "prisma generate && next build",
     "start": "next start",
     "lint": "next lint"
-  },
+      },
   "dependencies": {
     "@hookform/resolvers": "^3.1.1",
     "@next-auth/prisma-adapter": "^1.0.7",
@@ -16,6 +16,7 @@
     "@radix-ui/react-slot": "^1.0.2",
     "@radix-ui/react-toast": "^1.2.6",
     "@types/node": "20.4.5",
+    "autoprefixer": "10.4.14",
     "bcrypt": "^5.1.1",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
@@ -24,11 +25,13 @@
     "lucide-react": "^0.263.1",
     "next": "^15.2.0-canary.69",
     "next-auth": "^4.24.11",
+    "postcss": "^8.5.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-hook-form": "^7.45.2",
     "sonner": "^2.0.1",
     "tailwind-merge": "^1.14.0",
+    "tailwindcss": "3.3.3",
     "tailwindcss-animate": "^1.0.6",
     "zod": "^3.24.2"
   },
@@ -36,10 +39,7 @@
     "@types/bcrypt": "^5.0.2",
     "@types/react": "^19.0.10",
     "@types/react-dom": "^19.0.4",
-    "autoprefixer": "^10.4.21",
-    "postcss": "^8.5.6",
     "prisma": "^6.11.1",
-    "tailwindcss": "^4.1.11",
     "typescript": "^5.7.3"
   }
 }
